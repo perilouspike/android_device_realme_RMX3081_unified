@@ -16,7 +16,7 @@
 #
 #
 
-
+PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/twrp_RMX3081.mk
 
 COMMON_LUNCH_CHOICES := \
