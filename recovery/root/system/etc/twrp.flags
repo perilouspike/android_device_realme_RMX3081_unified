@@ -5,11 +5,6 @@
 # mount_point        fstype    device                 device2                  flags
 
 # Logical partitions
-/system              ext4      /dev/block/mapper/system                        flags=display="System";removable;logical;flashimg=1
-/system_ext          ext4      /dev/block/mapper/system_ext                    flags=display="System-EXT";removable;logical
-/vendor              ext4      /dev/block/mapper/vendor                        flags=display="Vendor";removable;logical;backup=1
-/product             ext4      /dev/block/mapper/product                       flags=display="Product";removable;logical;backup=1
-/odm                 ext4      /dev/block/mapper/odm                           flags=display="Odm";removable;logical;backup=1
 /my_product          ext4      /dev/block/mapper/my_product                    flags=display="My-product";logical;backup=1
 /my_engineering      ext4      /dev/block/mapper/my_engineering                flags=display="My-engineering";logical;backup=1
 
@@ -94,5 +89,3 @@
 # Removable storage
 /external_sd         vfat      /dev/block/mmcblk0p1            /dev/block/mmcblk0                flags=display="Micro_SD";storage;wipeingui;removable;fsflags="nosuid,nodev,utf8"
 /usb_otg             vfat      /dev/block/sdg1                                 flags=display="USB_Storage";storage;wipeingui;removable;fsflags="utf8"
-
-#
