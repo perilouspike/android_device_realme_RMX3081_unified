@@ -92,7 +92,7 @@
 /oplusreserve1       emmc      /dev/block/sdf6                                 flags=backup=1;subpartitionof=/abl                              
 
 # Removable storage
-/external_sd         vfat      /dev/block/mmcblk1p1                            flags=display="Micro_SD";storage;wipeingui;removable;fsflags="nosuid,nodev,utf8"
+/external_sd         vfat      /dev/block/mmcblk0p1            /dev/block/mmcblk0                flags=display="Micro_SD";storage;wipeingui;removable;fsflags="nosuid,nodev,utf8"
 /usb_otg             vfat      /dev/block/sdg1                                 flags=display="USB_Storage";storage;wipeingui;removable;fsflags="utf8"
 
 #
