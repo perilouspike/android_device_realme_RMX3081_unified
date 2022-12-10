@@ -7,7 +7,13 @@
 #       All Rights Reserved.
 #       Confidential and Proprietary - Qualcomm Technologies, Inc.
 #  ---------------------------------------------------------------------------
+
+on boot
+    start perf-hal-2-2
+
 service perf-hal-2-2 /vendor/bin/hw/vendor.qti.hardware.perf@2.2-service
-    class hal
     user root
-    group root readproc oem_2907
+    group root
+    setenv LD_LIBRARY_PATH /vendor/lib64:/vendor/lib:/system/lib64:/system/lib:/sbin
+    disabled
+    seclabel u:r:recovery:s0
