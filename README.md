@@ -1,9 +1,28 @@
-# Android device tree for Realme 8 pro (RMX3081)
+# Realme 8 pro
+                                                 
+The Realme 8 pro (codenamed _'RMX3081'_) is a mid-range smartphone from OPPO's sub-brand Realme launched in March, 2021.
 
-```
-#
-# Copyright (C) 2022 The Android Open Source Project
-# Copyright (C) 2022 TeamWin Recovery Project
-#
-#
-```
+## Device specifications
+
+| Device                  | Realme 7 Pro                                                |
+| ----------------------- | :---------------------------------------------------------- |
+| SoC                     | Qualcomm SM7125 Snapdragon 720G                             |
+| CPU                     | Qualcomm® Kryo™ 465, 2x Gold @ 2.3GHz & 6x Silver @ 1.8GHz  |
+| GPU                     | Adreno 618                                                  |
+| Memory                  | 6/8 GB RAM (LPDDR4X)                                        |
+| Shipped Android version | 10 with RealmeUI 1.0                                        |
+| Storage                 | 128GB UFS 2.1 flash storage                                 |
+| MicroSD                 | Up to 512 GB                                                |
+| Battery                 | Non-removable Li-Ion 4500 mAh                               |
+| Dimensions              | 160.6 x 73.9 x 8.1 mm                                       |
+| Display                 | 1080 x 2400 (20:9), 6.4 inches                              |
+| Rear camera 1           | 108 MP, f/1.9, 26mm (wide), 1/1.52", 0.7µm, PDAF            |
+| Rear camera 2           | 8 MP, f/2.3, 119˚, 16mm (ultrawide), 1/4.0", 1.12µm         |
+| Rear camera 3           | 2 MP, f/2.4, (macro)                                        |
+| Rear camera 4           | 2 MP, f/2.4, (depth)                                        |
+| Front camera            | 16 MP, f/2.5, (wide), 1/3.0", 1.0µm                         |
+
+## Device picture
+
+
+
