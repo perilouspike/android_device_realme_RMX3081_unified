@@ -14,11 +14,10 @@
 # limitations under the License.
 #
 
-
-# Inherit from RMX3081 device
+# Inherit from the Device Tree itself.
 $(call inherit-product, device/realme/RMX3081/device.mk)
 
-# Inherit some common twrp stuff.
+# Inherit from TWRP-common Stuff, if building TWRP.
 $(call inherit-product-if-exists, vendor/twrp/config/common.mk)
 
 # Inherit from PBRP-common stuff, if building PBRP.
