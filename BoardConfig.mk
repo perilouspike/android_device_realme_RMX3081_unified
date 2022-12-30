@@ -187,3 +187,9 @@ BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 # deal with "error: overriding commands for target" problems
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
+
+# TWRP Configuration
+include $(DEVICE_PATH)/config/TWRPConfig.mk
+
+# SHRP Configuration
+include $(DEVICE_PATH)/config/SHRPConfig.mk
