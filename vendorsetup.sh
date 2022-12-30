@@ -28,8 +28,8 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	
 	# Device Information
 	export FOX_ARCH=arm64
-	export FOX_VARIANT="12.1"
-	export TARGET_DEVICE_ALT="RMX3081L1,ossi,qssi,RMX3081T2" # I am not what are the over possible names.
+	export FOX_VARIANT="A12_FBEv2"
+	export TARGET_DEVICE_ALT="RMX3081,RMX3081L1,ossi,qssi,RMX3081T2" # I am not what are the over possible names.
 
 	# Funtions
 	export FOX_REPLACE_BUSYBOX_PS=1
@@ -72,6 +72,13 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_PATCH_AVB20=1
 	export OF_NO_SPLASH_CHANGE=1
 	export OF_PATCH_VBMETA_FLAG=2
+        export OF_FBE_METADATA_MOUNT_IGNORE=1
+	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
+	export OF_RUN_POST_FORMAT_PROCESS=1
+	export FOX_DELETE_AROMAFM=1
+	
+	# try to prevent potential data format errors
+	export OF_UNBIND_SDCARD_F2FS=1
 	
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
