@@ -132,8 +132,8 @@ TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery.fstab
 TARGET_SYSTEM_PROP := $(DEVICE_PATH)/props/system.prop
 TARGET_VENDOR_PROP := $(DEVICE_PATH)/props/vendor.prop
-TW_OVERRIDE_SYSTEM_PROPS := \
-               "ro.build.date.utc;ro.bootimage.build.date.utc=ro.build.date.utc;ro.odm.build.date.utc=ro.build.date.utc;ro.product.build.date.utc=ro.build.date.utc;ro.system.build.date.utc=ro.build.date.utc;ro.system_ext.build.date.utc=ro.build.date.utc;ro.vendor.build.date.utc=ro.build.date.utc;ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
+#TW_OVERRIDE_SYSTEM_PROPS := \
+               #"ro.build.date.utc;ro.bootimage.build.date.utc=ro.build.date.utc;ro.odm.build.date.utc=ro.build.date.utc;ro.product.build.date.utc=ro.build.date.utc;ro.system.build.date.utc=ro.build.date.utc;ro.system_ext.build.date.utc=ro.build.date.utc;ro.vendor.build.date.utc=ro.build.date.utc;ro.build.product;ro.build.fingerprint=ro.system.build.fingerprint;ro.build.version.incremental;ro.product.device=ro.product.system.device;ro.product.model=ro.product.system.model;ro.product.name=ro.product.system.name"
            
 # Recovery Modules
 TARGET_RECOVERY_DEVICE_MODULES += \
@@ -142,21 +142,21 @@ TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.memory.token@1.0 \
     libdmabufheap \
     libhidlmemory \
-    libion \
-    libnetutils \
-    libc.so \
-    libxml2
+    #libion \
+    #libnetutils \
+    #libc.so \
+    #libxml2
 
-RECOVERY_LIBRARY_SOURCE_FILES += \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.allocator@1.0.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.memory@1.0.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.memory.token@1.0.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libdmabufheap.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libhidlmemory.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libc.so \
-    $(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
+#RECOVERY_LIBRARY_SOURCE_FILES += \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.allocator@1.0.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.memory@1.0.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/android.hidl.memory.token@1.0.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/libdmabufheap.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/libhidlmemory.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/libion.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/libnetutils.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/libc.so \
+    #$(TARGET_OUT_SHARED_LIBRARIES)/libxml2.so
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
@@ -185,7 +185,7 @@ BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
 # deal with "error: overriding commands for target" problems
-BUILD_BROKEN_DUP_RULES := true
+#BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # TWRP Configuration
