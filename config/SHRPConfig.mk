@@ -36,6 +36,8 @@ SHRP_STATUSBAR_RIGHT_PADDING := 20
 SHRP_STATUSBAR_LEFT_PADDING := 80
 # SHRP Express, enables on-the-fly theme patching (also persistent) + persistent lock [Optional]
 SHRP_EXPRESS := true
+# SHRP Express use Data save shrp files inside /data instead of /system
+SHRP_EXPRESS_USE_DATA := true
 # SHRP Dark mode, use this flag to have dark theme set by default [Optional]
 #SHRP_DARK := true
 # Max Brightness of LED [Optional]
