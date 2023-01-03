@@ -53,7 +53,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_ENABLE_LPTOOLS=1
 	
 	# Removed LED Support
-	#export OF_USE_GREEN_LED=0
+	export OF_USE_GREEN_LED=1
 
 	# Display Settings
 	export OF_SCREEN_H=2340
@@ -95,7 +95,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# AVB2.0 Support
 	export OF_PATCH_AVB20=1
 	# Prevent Splash Screen Changing
-	#export OF_NO_SPLASH_CHANGE=1
+	export OF_NO_SPLASH_CHANGE=0
 	# Magisk Boot Patch
 	export OF_USE_MAGISKBOOT=1
 	export OF_PATCH_VBMETA_FLAG=2
