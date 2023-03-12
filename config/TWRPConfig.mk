@@ -58,6 +58,9 @@ TW_CUSTOM_CPU_POS := 400
 TW_CUSTOM_CLOCK_POS := 200
 TW_CUSTOM_BATTERY_POS := 800
 
+# Exclusion
+TW_BACKUP_EXCLUSIONS := /data/fonts
+
 # Recovery Modules
 TARGET_RECOVERY_DEVICE_MODULES += \
     android.hidl.allocator@1.0 \
