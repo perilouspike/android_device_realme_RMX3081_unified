@@ -59,7 +59,7 @@ TW_CUSTOM_CLOCK_POS := 200
 TW_CUSTOM_BATTERY_POS := 800
 
 # Exclusion
-TW_BACKUP_EXCLUSIONS := /data/fonts
+TW_BACKUP_EXCLUSIONS := /data/fonts/,/data/nandswap
 
 # Recovery Modules
 TARGET_RECOVERY_DEVICE_MODULES += \

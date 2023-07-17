@@ -93,7 +93,7 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	# Build Date and Time Override
 	export FOX_BUGGED_AOSP_ARB_WORKAROUND="1546300800"; # Tuesday, January 1, 2019 12:00:00 AM GMT+00:00
 	# AVB2.0 Support
-	export OF_PATCH_AVB20=1
+	#export OF_PATCH_AVB20=1
 	# Prevent Splash Screen Changing
 	export OF_NO_SPLASH_CHANGE=0
 	# Magisk Boot Patch
@@ -101,23 +101,23 @@ if [ "$1" = "$FDEVICE" -o "$FOX_BUILD_DEVICE" = "$FDEVICE" ]; then
 	export OF_PATCH_VBMETA_FLAG=2
 	export OF_USE_MAGISKBOOT_FOR_ALL_PATCHES=1
 	# Metadata Support
-        export OF_FBE_METADATA_MOUNT_IGNORE=1
+    export OF_FBE_METADATA_MOUNT_IGNORE=1
 	# Multi-user Backup fix (error 255)
 	export OF_SKIP_MULTIUSER_FOLDERS_BACKUP=1
 	# Recreate /sdcard/ folder after Format data
 	export OF_RUN_POST_FORMAT_PROCESS=1
 	# Delete AromaFM
 	export FOX_DELETE_AROMAFM=1
-	
 	# try to prevent potential data format errors
 	export OF_UNBIND_SDCARD_F2FS=1
+	# Xiaomi MIUI device specifics.
+	export OF_DISABLE_MIUI_SPECIFIC_FEATURES=1
 	
 	# let's see what are our build VARs
 	if [ -n "$FOX_BUILD_LOG_FILE" -a -f "$FOX_BUILD_LOG_FILE" ]; then
 		export | grep "FOX" >> $FOX_BUILD_LOG_FILE
 		export | grep "OF_" >> $FOX_BUILD_LOG_FILE
-		export | grep "TARGET_" >> $FOX_BUILD_LOG_FILE
-		export | grep "TW_" >> $FOX_BUILD_LOG_FILE
+		export | grep "TARGET_" >> $FOX_BUILD_LOG_FILEOF_TWRP_COMPATIBILITY_MODE
 	fi
 fi
 #

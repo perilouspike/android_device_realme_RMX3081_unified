@@ -5,7 +5,6 @@
 # mount_point        fstype    device                 device2                  flags
 
 /system              auto      /dev/block/mapper/system                        flags=removable
-#/system_ext          auto      /dev/block/mapper/system_ext                    flags=removable
 /product             auto      /dev/block/mapper/product                       flags=removable
 /vendor              auto      /dev/block/mapper/vendor                        flags=removable
 /odm                 auto      /dev/block/mapper/odm                           flags=removable
